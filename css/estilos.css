@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carrusel{
+    background-color: #e4dcec;
+  }
+  .masvendidoscontenedor {
+    background-color: #c2924b;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #carouselExampleControls{
+    height: 100%;
+    width: 80%;
+  }
+  
+  .container-fluid{
+    background-color: #c4bce3;
+  }
+  .fondopagina{
+    background-color:  #e4dcec;
+  }
+  .piedepagina{
+    background-color: #c4bce3;
+  }
+  
+  .boton:hover {
+    background-color: rgb(162, 25, 204) !important;
+    border: rgb(162, 25, 204) !important ;
+  }
+  
+  #Contacto{
+    display:flex; 
+    justify-content: center;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 460px) {
+    .menulateral{
+        display: none;
+    }
+  }
+  .d-flex{
+    display: flex;
+    text-align: center;
+  }
+  .btn {
+    display: block ;
+  }
+  /* No CSS *//*# sourceMappingURL=estilo.css.map */
+
+}
+/*# sourceMappingURL=estilo.css.map */

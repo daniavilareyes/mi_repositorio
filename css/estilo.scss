@@ -1,0 +1,93 @@
+body{
+    header{
+        .container-fluid{
+            background-color: #c4bce3;
+        }
+    }
+    main{
+        .carrusel{
+            background-color: #e4dcec;
+            #carouselExampleControls{
+                height: 100;
+                width: 80;
+            }
+        }
+    }
+
+    .masvendidoscontenedor{
+        background-color: #c2924b;
+        display: flex;
+        justify-content: center;
+        .principales{
+            color: white;
+        }
+    }
+    .fondopagina {
+        background-color:  #e4dcec;
+        .container{
+            .row{
+                .col{
+                    .card{
+                        .boton{
+                            background-color: #e9af59;
+                        }
+                        .boton:hover {
+                            background-color: rgb(162, 25, 204) !important;
+                            border: rgb(162, 25, 204) !important ;
+                          }
+                    }
+                }
+            }
+        }
+    }
+    .piedepagina{
+        background-color: #c4bce3;
+        .container-fluid{
+            .d-flex{
+                display: flex;
+                text-align: center;
+            }
+        }
+    }
+}
+body{
+    .principal{
+        display: flex;
+        justify-content: center;
+        div{
+            .menulateral{
+                @media screen and (max-width: 480){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+body{
+    .Acordeon{
+        display: inline;
+    }
+}
+body{
+    #Contacto {
+    background-color: #c4bce3;
+    .container-fluid{
+        .row{
+            .contactos{ 
+                text-align: center;
+                .btn{
+                    background-color: #e9af59;
+                }
+                .btn:hover {
+                    background-color: rgb(162, 25, 204) !important;
+                    border: rgb(162, 25, 204) !important ;
+                  }
+            }
+        }
+    }
+}
+
+}
+
+
+

@@ -1,244 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-/* 
-
-nav ul li {
-    display: inline;
+body header .container-fluid {
+  background-color: #c4bce3;
 }
 
-ul {
-    list-style-type: none;
+body main .carrusel {
+  background-color: #e4dcec;
 }
 
-a,
-button {
-    text-decoration: none;
+body main .carrusel #carouselExampleControls {
+  height: 100;
+  width: 80;
 }
 
-button {
-    border-radius: 5px;
-    background-color: white;
-    padding: 3px;
+body .masvendidoscontenedor {
+  background-color: #c2924b;
+  display: flex;
+  justify-content: center;
 }
 
-nav {
-    font-size: large;
-    font-weight: 500;
+body .masvendidoscontenedor .principales {
+  color: white;
 }
 
-header {
-    justify-content: space-between;
+body .fondopagina {
+  background-color: #e4dcec;
 }
 
-nav ul {
-    justify-content: flex-end;
+body .fondopagina .container .row .col .card .boton {
+  background-color: #e9af59;
 }
 
-article {
-    background-color: #e4dcec;
-    border-radius: 15px;
-    text-align: center;
+body .fondopagina .container .row .col .card .boton:hover {
+  background-color: #a219cc !important;
+  border: #a219cc !important;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+body .piedepagina {
+  background-color: #c4bce3;
 }
 
-section {
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
+body .piedepagina .container-fluid .d-flex {
+  display: flex;
+  text-align: center;
 }
 
-
-body {
-    font-family: 'Montserrat', sans-serif;
+body .principal {
+  display: flex;
+  justify-content: center;
 }
 
-.headerimg {
-    background-color: #c4bce3;
-    display: flex;
+@media screen and (max-width: 480) {
+  body .principal div .menulateral {
+    display: none;
+  }
 }
 
-.tamañoimagen {
-    width: 100px;
-    height: 100px;
+body .Acordeon {
+  display: inline;
 }
 
-.nav {
-    display: inline-block;
+body #Contacto {
+  background-color: #c4bce3;
 }
 
-.nav__li {
-    display: inline-block;
-    padding: 50px;
+body #Contacto .container-fluid .row .contactos {
+  text-align: center;
 }
 
-.nav__li:hover a {
-    color: goldenrod;
+body #Contacto .container-fluid .row .contactos .btn {
+  background-color: #e9af59;
 }
 
-.nav__li a {
-    text-decoration: none;
-}
-
-.caja1 {
-    background-color: #e4dcec;
-    display: flex;
-    justify-content: center;
-}
-
-.santana {
-    width: auto;
-    height: auto;
-}
-
-.principales {
-    background-color: #c68b32;
-    color: honeydew;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
-.piedepagina {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:#c4bce3;
-    width: 100%;
-    padding: 10px;
-
-}
-
-.pregfrec {
-    background-color: lightgoldenrodyellow;
-}
-
-.orden {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer {
-    grid-area: footer;
-}
-
-section {
-    grid-area: section;
-}
-
-section {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 10px;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-content: stretch;
-    align-content: stretch;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-row: auto;
-    justify-items: center;
-}
-
-.piedepagina2{
-    background-color: #e4dcec;
-    border-radius: 5px;
-    display: flex;
-}
-.pie {
-    align-self: center;
- }
-
-.item {
-    justify-self: stretch;
-    align-self: stretch;
-}
-aside{
-    grid-area: aside;
-    background-color: lightgoldenrodyellow;
-}
-
-#Productos{
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: auto auto ;
-    grid-column-gap: 5px;
-    grid-template-areas: "aside section";
-}
-
-#Contacto{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "articule articule";
-    grid-gap: 5px;
-}*/
-
-/*Nuevos elementos*/
-
-.carrusel{
-    background-color: #e4dcec;
-}
-.masvendidoscontenedor {
-    background-color: #c2924b;
-    display: flex;
-    justify-content: center;
-
-}
-
-h1 {
-    color: white;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-}
-
-#carouselExampleControls{
-    height: 100%;
-    width: 80%;
-}
-
-.container-fluid{
-    background-color: #c4bce3;
-}
-.fondopagina{
-    background-color:  #e4dcec;
-}
-.piedepagina{
-    background-color: #c4bce3;
-}
-
-.boton:hover {
-    background-color: rgb(162, 25, 204) !important;
-    border: rgb(162, 25, 204) !important ;
-}
-
-#Contacto{
-    display:flex; 
-    justify-content: center;
-    text-align: center;
-    background-color:#e4dcec;
-}
-
-@media screen and (max-width: 460px) {
-    .menulateral{
-        display: none;
-    }
-}
-.d-flex{
-    display: flex;
-    text-align: center;
-}
-.btn {
-    display: block ;
+body #Contacto .container-fluid .row .contactos .btn:hover {
+  background-color: #a219cc !important;
+  border: #a219cc !important;
 }
