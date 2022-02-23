@@ -50,26 +50,26 @@ body{
         }
     }
 }
-body{
-    .principal{
-        display: flex;
-        justify-content: center;
-        div{
-            .menulateral{
-                @media screen and (max-width: 480){
-                    display: none;
-                }
+
+.principal{
+    display: flex;
+    justify-content: center;
+    div{
+        .menulateral{
+            @media screen and (max-width: 480px){
+            display: none;
             }
         }
     }
 }
-body{
-    .Acordeon{
+
+
+.Acordeon{
         display: inline;
     }
-}
-body{
-    #Contacto {
+
+
+#Contacto {
     background-color: #c4bce3;
     .container-fluid{
         .row{
@@ -87,7 +87,7 @@ body{
     }
 }
 
-}
+
 
 
 

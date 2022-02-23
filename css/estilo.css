@@ -43,34 +43,34 @@ body .piedepagina .container-fluid .d-flex {
   text-align: center;
 }
 
-body .principal {
+.principal {
   display: flex;
   justify-content: center;
 }
 
-@media screen and (max-width: 480) {
-  body .principal div .menulateral {
+@media screen and (max-width: 480px) {
+  .principal div .menulateral {
     display: none;
   }
 }
 
-body .Acordeon {
+.Acordeon {
   display: inline;
 }
 
-body #Contacto {
+#Contacto {
   background-color: #c4bce3;
 }
 
-body #Contacto .container-fluid .row .contactos {
+#Contacto .container-fluid .row .contactos {
   text-align: center;
 }
 
-body #Contacto .container-fluid .row .contactos .btn {
+#Contacto .container-fluid .row .contactos .btn {
   background-color: #e9af59;
 }
 
-body #Contacto .container-fluid .row .contactos .btn:hover {
+#Contacto .container-fluid .row .contactos .btn:hover {
   background-color: #a219cc !important;
   border: #a219cc !important;
 }
