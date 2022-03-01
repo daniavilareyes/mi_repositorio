@@ -1,3 +1,16 @@
+$botones: (btn-1:#e9af59, btn-2:#e99619, btn-3:#bd8127);
+@each $btn,
+$color in $botones {
+    .#{$btn} {
+        background-color: $color;
+    }
+}
+
+@mixin display-justify{
+    display: flex;
+    justify-content: center;
+}
+
 body{
     header{
         .container-fluid{
@@ -6,7 +19,7 @@ body{
     }
     main{
         .carrusel{
-            background-color: #e4dcec;
+            @extend .container-fluid;
             #carouselExampleControls{
                 height: 100;
                 width: 80;
@@ -16,8 +29,7 @@ body{
 
     .masvendidoscontenedor{
         background-color: #c2924b;
-        display: flex;
-        justify-content: center;
+        @include display-justify;
         .principales{
             color: white;
         }
@@ -28,13 +40,10 @@ body{
             .row{
                 .col{
                     .card{
-                        .boton{
-                            background-color: #e9af59;
-                        }
-                        .boton:hover {
-                            background-color: rgb(162, 25, 204) !important;
-                            border: rgb(162, 25, 204) !important ;
-                          }
+                        .btn:hover {
+                            background-color: rgb(162, 25, 204);
+                            border: rgb(162, 25, 204);
+                          } 
                     }
                 }
             }
@@ -42,15 +51,21 @@ body{
     }
     .piedepagina{
         background-color: #c4bce3;
+        text-align: center;
         .container-fluid{
             .d-flex{
                 display: flex;
                 text-align: center;
             }
         }
+
     }
 }
-
+.piedepaginacont{
+    background-color: #c4bce3;
+    text-align: center;
+    padding: 30px;
+}
 .principal{
     display: flex;
     justify-content: center;
@@ -63,20 +78,25 @@ body{
     }
 }
 
-
 .Acordeon{
         display: inline;
     }
 
 
 #Contacto {
-    background-color: #c4bce3;
+    background-color: #e4dcec;
     .container-fluid{
         .row{
+            padding: 20px;
+
             .contactos{ 
                 text-align: center;
+                margin-bottom: 10px;
                 .btn{
                     background-color: #e9af59;
+                    display: block;
+                    margin-top: 10px;
+
                 }
                 .btn:hover {
                     background-color: rgb(162, 25, 204) !important;
