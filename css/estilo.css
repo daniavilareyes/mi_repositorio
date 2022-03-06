@@ -21,12 +21,8 @@ body main .carrusel #carouselExampleControls {
 
 body .masvendidoscontenedor {
   background-color: #c2924b;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 body .masvendidoscontenedor .principales {
@@ -48,8 +44,6 @@ body .piedepagina {
 }
 
 body .piedepagina .container-fluid .d-flex, body .piedepagina main .carrusel .d-flex, body main .piedepagina .carrusel .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -61,12 +55,8 @@ body .piedepagina .container-fluid .d-flex, body .piedepagina main .carrusel .d-
 }
 
 .principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -102,4 +92,3 @@ body .piedepagina .container-fluid .d-flex, body .piedepagina main .carrusel .d-
   background-color: #a219cc !important;
   border: #a219cc !important;
 }
-/*# sourceMappingURL=estilo.css.map */
