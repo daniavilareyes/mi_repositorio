@@ -14,7 +14,23 @@ $color in $botones {
 body{
     header{
         .container-fluid{
-            background-color: #c4bce3;
+            background-color: #c4bce3; 
+        }
+        .menu a {
+            position: relative;
+          }
+        .menu a::before{
+            content: ´´;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, #e9af59, #e99619, #bd8127);
+            z-index: 1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
         }
     }
     main{
@@ -104,6 +120,12 @@ body{
                   }
             }
         }
+    }
+}
+.card{
+    .boton {
+        background-color: #e9af59;
+        border: #e9af59;
     }
 }
 
