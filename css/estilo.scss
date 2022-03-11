@@ -1,10 +1,3 @@
-$botones: (btn-1:#e9af59, btn-2:#e99619, btn-3:#bd8127);
-@each $btn,
-$color in $botones {
-    .#{$btn} {
-        background-color: $color;
-    }
-}
 
 @mixin display-justify{
     display: flex;
@@ -15,22 +8,18 @@ body{
     header{
         .container-fluid{
             background-color: #c4bce3; 
-        }
-        .menu a {
-            position: relative;
-          }
-        .menu a::before{
-            content: ´´;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(to right, #e9af59, #e99619, #bd8127);
-            z-index: 1;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.5s ease-in-out;
+            .nav-item:hover{
+                background-color: #aca0da ;
+            }
+            .btn-outline-success{
+                color: gray;
+                border-color: gray;
+                &:hover{
+                    background-color: #a98bdd;
+                    color: #ffffff;
+                    border: #ffffff;
+                }
+            }
         }
     }
     main{
@@ -55,11 +44,71 @@ body{
         .container{
             .row{
                 .col{
+                    /*Productos*/ 
                     .card{
-                        .btn:hover {
-                            background-color: rgb(162, 25, 204);
-                            border: rgb(162, 25, 204);
-                          } 
+                        margin-bottom: 20px;
+                        h5{
+                            text-align: center;
+                            font-family: 'Raleway', sans-serif;
+                        }
+                        img{
+                            padding: 15px;
+                        }
+                        .btn{
+                            display: inline-block;
+                            padding: 8px 20px;
+                            margin-left: 15px;
+                            border: 1px solid rgb(127, 64, 185);
+                            border-radius: 4px;
+                            transition: all 0.2s ease-in;
+                            position: relative;
+                            overflow: hidden;
+                            font-size: 15px;
+                            color: rgb(127, 64, 185);
+                            z-index: 1;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%) scaleY(1) scaleX(1.25);
+                            top: 100%;
+                            width: 140%;
+                            height: 180%;
+                            background-color: rgba(0, 0, 0, 0.05);
+                            border-radius: 50%;
+                            display: block;
+                            transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                            z-index: -1;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 55%;
+                            transform: translateX(-50%) scaleY(1) scaleX(1.45);
+                            top: 180%;
+                            width: 160%;
+                            height: 190%;
+                            background-color: #975de4;
+                            border-radius: 50%;
+                            display: block;
+                            transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                            z-index: -1;
+                        }
+                        &:hover{
+                            color: #ffffff;
+                            border: 1px solid #975de4;
+                        }
+                        &:hover::before{
+                            top: -35%;
+                            background-color: #975de4;
+                            transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                        }
+                        &:hover::after{
+                            top: -45%;
+                            background-color: #975de4;
+                            transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                        }
+                        }
                     }
                 }
             }
@@ -109,25 +158,70 @@ body{
                 text-align: center;
                 margin-bottom: 10px;
                 .btn{
-                    background-color: #e9af59;
-                    display: block;
-                    margin-top: 10px;
-
+                        margin: 15px;
+                        background: linear-gradient(-45deg, #3f00b5, #9f69fe, #dfb322, #3f00b5);
+                        background-size: 800% 400%;
+                        padding: 1em 2em;
+                        display: inline-block;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        color: white;
+                        -webkit-transition: all .5s ease-in-out;
+                        transition: all .5s ease-in-out;
+                        -webkit-animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+                                animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+                
+                    &:hover{
+                        -webkit-animation: gradient 3s infinite;
+                        animation: gradient 3s infinite;
+                        -webkit-transform: scale(1.05);
+                        -ms-transform: scale(1.05);
+                        transform: scale(1.05);
+                    }
+                    &:active{
+                        -webkit-animation: gradient 3s infinite;
+                        animation: gradient 3s infinite;
+                        -webkit-transform: scale(0.8);
+                        -ms-transform: scale(0.8);
+                        transform: scale(0.8);
+                    }
+                    }
                 }
-                .btn:hover {
-                    background-color: rgb(162, 25, 204) !important;
-                    border: rgb(162, 25, 204) !important ;
-                  }
-            }
         }
     }
 }
-.card{
-    .boton {
-        background-color: #e9af59;
-        border: #e9af59;
+    
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0% 50%;
+}
+}
+@keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
     }
 }
+                
+               
+
 
 
 
